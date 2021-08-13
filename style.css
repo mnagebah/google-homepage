@@ -34,6 +34,11 @@ body{
     border-radius: 5px;
 
 }
+#apps{
+ width: 30px;
+
+ height: ;
+}
 main{
     display: grid;
     width: 100%;
@@ -43,31 +48,44 @@ main{
 }
 
 #search-bar{
-   display: flex;
-   width: 100%;
-   justify-content: center;
+   position: relative;
 }
 
 #bar{
+    display: block;
   height: 36px;
-  flex-shrink: 3;
-  flex-basis: 500px;
+
+  width: 600px;
+  border: none;
   border-radius: 18px;
   border: 1.5px solid rgba(0,0,0,.5);
-  background-image: url(../img/keyboard);
-  position: left;
-  padding-right:10px;
-  background-repeat: no-repeat;
-  pointer-events: cursor;
+    pointer-events: curser;
+
+
+
 
 
 }
 
-#bar{
-    background-image: url(../img/search);
-    position: left;
-    padding-left:10px;
-    background-repeat: no-repeat;
+
+.holder{
+    position: absolute;
+    width: 30px;
+    opacity: 0.7;
+    ;top: 6px;
+}
+
+
+#search{
+
+    left:15px ;
+}
+
+#key{
+    right: 15px;
+}
+#bar [type=text]{
+    padding-left:30px;
 }
 
 .options{
