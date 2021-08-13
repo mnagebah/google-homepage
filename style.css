@@ -2,8 +2,10 @@
 body{
     box-sizing: border-box;
     margin:0px 0px;
-    min-height: 100vh;
+    min-height:  100%;
     margin-right: 0px;
+
+
 }
 #navbar{
     list-style-type: none;
@@ -37,6 +39,7 @@ main{
     width: 100%;
     justify-items: center;
     grid-row-gap: 20px;
+    z-index:1;
 }
 
 #search-bar{
@@ -105,13 +108,14 @@ main{
 }
 
 footer{
-    position: sticky;
-    top: 100%;
+    /*! position: sticky; */
+    /*! top: 100%; */
+    background: #f2f2f2;
 }
 
 #location{
     width: 100%;
-    background: rgba(0,0,0,.1);
+    /*! background: rgba(0,0,0,.1); */
     border-bottom: 2px solid rgba(0,0,0,0.8);
     padding-top: 7px;
     height: 50px;
@@ -129,7 +133,7 @@ footer{
 
     justify-content:space-between;
     align-content: center;
-    background:rgba(0,0,0,.1);
+
 
 
 }
@@ -147,8 +151,9 @@ footer{
 }
 #links-2{
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: center;
 
+    margin-right: 40px;
 }
 
 #links-1> ul:nth-last-child{
@@ -159,10 +164,13 @@ footer{
 #links> ul> li{
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis:100px;
+    flex-basis:;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0px;
+    display: block;
+    padding-left:10px;
+    padding-right: 10px;
 }
 
 
@@ -170,9 +178,10 @@ footer{
     #links{
 
         align-content: center;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        font-size: 0.9.5em;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+
 
     }
 
@@ -185,7 +194,19 @@ footer{
 
 }
 
-footer{
-  position: sticky;
-  top: 100vh;
+#footer{
+
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background:rgba(0,0,0,.1);
+
+
+}
+
+@media (max-height:380px){
+    #footer{
+        position:inherit;
+    }
+
 }
